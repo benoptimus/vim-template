@@ -264,8 +264,10 @@ endfunction
 function <SID>TExpandVars()
 	" Date/time values
 	let l:day        = strftime("%d")
+    let l:lday       = strftime("%a")
 	let l:year       = strftime("%Y")
 	let l:month      = strftime("%m")
+    let l:lmonth      = strftime("%b")
 	let l:time       = strftime("%H:%M")
 	let l:date       = exists("g:dateformat") ? strftime(g:dateformat) :
 				     \ (l:year . "-" . l:month . "-" . l:day)
@@ -285,12 +287,14 @@ function <SID>TExpandVars()
 
 	" Finally, perform expansions
 	call <SID>TExpand("DAY",   l:day)
+    call <SID>TExpand("LDAY", l:lday)
 	call <SID>TExpand("YEAR",  l:year)
 	call <SID>TExpand("DATE",  l:date)
 	call <SID>TExpand("TIME",  l:time)
 	call <SID>TExpand("USER",  l:user)
 	call <SID>TExpand("FDATE", l:fdate)
 	call <SID>TExpand("MONTH", l:month)
+    call <SID>TExpand("LMONTH",l:lmonth)
 	call <SID>TExpand("FILE",  l:filen)
 	call <SID>TExpand("FFILE", l:filec)
 	call <SID>TExpand("FDIR",  l:fdir)
