@@ -4,7 +4,7 @@
 
 __author__  = "%USER% ♟ <%MAIL%>"
 __version__ = "%HERE%"
-__date__    = ""
+__date__    = "%LDAY% %LMONTH% %TIME% %YEAR%"
 
 # Distributed under terms of the %LICENSE% license.
 
