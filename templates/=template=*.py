@@ -1,12 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright © %YEAR% %USER% <%MAIL%>
+# Copyright ©  %YEAR% %USER%
 
 __author__  = "%USER% ♟ <%MAIL%>"
-__version__ = "%HERE%"
+__version__ = "0.0"
 __date__    = "%LDAY% %LMONTH% %TIME% %YEAR%"
 
-# Distributed under terms of the %LICENSE% license.
 
 """
 %HERE%
